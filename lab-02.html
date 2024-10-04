@@ -366,37 +366,37 @@ library(readr)</code></pre>
 </div>
 <div id="load-join-data-sets" class="section level2">
 <h2>Load &amp; join data sets</h2>
-<<<<<<< HEAD
-<pre class="r"><code># Member 2 (pair 1) write code to load File 1 data here:4
-data1 &lt;- read_excel(&quot;~/lab02/data/UN_country_region.xlsx&quot;)
-=======
 <pre class="r"><code># Member 2 (pair 1) write code to load File 1 data here:
 data1 &lt;-read_csv(&quot;data/mismanaged-plastic-waste-per-capita.csv&quot;)
->>>>>>> 74f60a75fe84cad43f2e3fe98f07aac1238a5f03
+
 
 
 # Member 4 (pair 2) write code to load File 2 data here:
-data2 &lt;- read_tsv(&quot;~/lab02/data/UN_country_population.tsv&quot;)
+data2 &lt;- read_tsv(&quot;data/UN_country_population.tsv&quot;)
+
 
 
 # Member 6 (pair 3) write code to load File 3 data here:
-<<<<<<< HEAD
-data3&lt;-read_csv(&quot;~/lab02/data/per-capita-ocean-plastic-waste.txt&quot;)</code></pre>
+data3&lt;-read_csv(&quot;data/per-capita-ocean-plastic-waste.txt&quot;)</code></pre>
 <pre><code>## Warning: One or more parsing issues, call `problems()` on your data frame for details,
 ## e.g.:
 ##   dat &lt;- vroom(...)
 ##   problems(dat)</code></pre>
 <pre class="r"><code># Member 1 (pair 1) write code to load File 4 data here:
-data4&lt;-read_csv(&quot;~/lab02/data/mismanaged-plastic-waste-per-capita.csv&quot;)</code></pre>
-=======
 
-
-
-# Member 1 (pair 1) write code to load File 4 data here:
 data4 &lt;- read_excel(&quot;data/UN_country_region.xlsx&quot;)</code></pre>
->>>>>>> 74f60a75fe84cad43f2e3fe98f07aac1238a5f03
 <pre class="r"><code># Member 2 (pair 1) write code to create object &#39;plastic_data_all&#39;:
 plastic_data_all &lt;- data1
+
+
+# Member 4 (pair 2) write code to join your data to &#39;plastic_data_all&#39;:
+
+
+# Member 6 (pair 3) write code to join your data to &#39;plastic_data_all&#39;:
+
+
+# Member 1 (pair 1) write code to join your data to &#39;plastic_data_all&#39;:</code></pre>
+<pre class="r"><code># Member 2 (pair 1) adds code here to view the first 10 rows of &#39;plastic_data_all&#39;
 plastic_data_all %&gt;% head(n = 10)</code></pre>
 <pre><code>## # A tibble: 10 × 3
 ##    name                code  mismanaged_plastic
@@ -411,21 +411,6 @@ plastic_data_all %&gt;% head(n = 10)</code></pre>
 ##  8 Bahrain             BHR                0.636
 ##  9 Bangladesh          BGD                6.27 
 ## 10 Barbados            BRB                3.04</code></pre>
-<pre class="r"><code># Member 4 (pair 2) write code to join your data to &#39;plastic_data_all&#39;:
-
-
-
-
-# Member 6 (pair 3) write code to join your data to &#39;plastic_data_all&#39;:
-
-
-
-
-# Member 1 (pair 1) write code to join your data to &#39;plastic_data_all&#39;:
-plastic_data_all &lt;- data4 %&gt;%
-  select(-name) %&gt;%
-  right_join(plastic_data_all, by = &quot;code&quot;)</code></pre>
-<pre class="r"><code># Member 2 (pair 1) adds code here to view the first 10 rows of &#39;plastic_data_all&#39;</code></pre>
 </div>
 <div id="exercises" class="section level2">
 <h2>Exercises</h2>
