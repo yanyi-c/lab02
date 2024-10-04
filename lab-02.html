@@ -366,22 +366,10 @@ library(readxl)</code></pre>
 <div id="load-join-data-sets" class="section level2">
 <h2>Load &amp; join data sets</h2>
 <pre class="r"><code># Member 2 (pair 1) write code to load File 1 data here:
-read_csv(&quot;data/mismanaged-plastic-waste-per-capita.csv&quot;)</code></pre>
-<pre><code>## # A tibble: 159 × 3
-##    name                code  mismanaged_plastic
-##    &lt;chr&gt;               &lt;chr&gt;              &lt;dbl&gt;
-##  1 Albania             ALB               24.2  
-##  2 Algeria             DZA               17.8  
-##  3 Angola              AGO                7.45 
-##  4 Antigua and Barbuda ATG                6.46 
-##  5 Argentina           ARG               10.4  
-##  6 Australia           AUS                0.209
-##  7 Bahamas             BHS                5.69 
-##  8 Bahrain             BHR                0.636
-##  9 Bangladesh          BGD                6.27 
-## 10 Barbados            BRB                3.04 
-## # ℹ 149 more rows</code></pre>
-<pre class="r"><code># Member 4 (pair 2) write code to load File 2 data here:
+data1 &lt;-read_csv(&quot;data/mismanaged-plastic-waste-per-capita.csv&quot;)
+
+
+# Member 4 (pair 2) write code to load File 2 data here:
 
 
 
@@ -392,7 +380,6 @@ read_csv(&quot;data/mismanaged-plastic-waste-per-capita.csv&quot;)</code></pre>
 # Member 1 (pair 1) write code to load File 4 data here:
 data4 &lt;- read_excel(&quot;data/UN_country_region.xlsx&quot;)</code></pre>
 <pre class="r"><code># Member 2 (pair 1) write code to create object &#39;plastic_data_all&#39;:
-data1 &lt;- read_csv(&quot;data/mismanaged-plastic-waste-per-capita.csv&quot;)
 plastic_data_all &lt;- data1
 plastic_data_all %&gt;% head(n = 10)</code></pre>
 <pre><code>## # A tibble: 10 × 3
