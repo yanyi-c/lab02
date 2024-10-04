@@ -54,7 +54,9 @@ plastic_data_all %>% head(n = 10)
 
 
 # Member 1 (pair 1) write code to join your data to 'plastic_data_all':
-
+plastic_data_all <- data4 %>%
+  select(-name) %>%
+  right_join(plastic_data_all, by = "code")
 
 
 ```
