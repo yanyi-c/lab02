@@ -49,7 +49,6 @@ data4 <- read_excel("data/UN_country_region.xlsx")
 ```{r join-data, message = FALSE}
 # Member 2 (pair 1) write code to create object 'plastic_data_all':
 plastic_data_all <- data1
-plastic_data_all %>% head(n = 10)
 
 
 
@@ -74,6 +73,7 @@ plastic_data_all <- data4 %>%
 
 ```{r print-data, message = FALSE}
 # Member 2 (pair 1) adds code here to view the first 10 rows of 'plastic_data_all'
+plastic_data_all %>% head(n = 10)
 
 
 
