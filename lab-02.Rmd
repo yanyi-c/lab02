@@ -29,7 +29,7 @@ read_csv("data/mismanaged-plastic-waste-per-capita.csv")
 
 
 # Member 1 (pair 1) write code to load File 4 data here:
-read_excel("data/UN_country_region.xlsx")
+data4 <- read_excel("data/UN_country_region.xlsx")
 
 
 ```
