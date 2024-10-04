@@ -17,9 +17,6 @@ library(readr)
 ## Load & join data sets
 
 ```{r load-data, message = FALSE}
-# Member 2 (pair 1) write code to load File 1 data here:4
-data1 <- read_excel("~/lab02/data/UN_country_region.xlsx")
-
 # Member 2 (pair 1) write code to load File 1 data here:
 data1 <-read_csv("data/mismanaged-plastic-waste-per-capita.csv")
 
@@ -34,12 +31,7 @@ data3<-read_csv("~/lab02/data/per-capita-ocean-plastic-waste.txt")
 
 
 # Member 1 (pair 1) write code to load File 4 data here:
-<<<<<<< HEAD
-data4<-read_csv("~/lab02/data/mismanaged-plastic-waste-per-capita.csv")
-=======
 data4 <- read_excel("data/UN_country_region.xlsx")
-
->>>>>>> 74f60a75fe84cad43f2e3fe98f07aac1238a5f03
 
 ```
 
@@ -47,25 +39,17 @@ data4 <- read_excel("data/UN_country_region.xlsx")
 
 ```{r join-data, message = FALSE}
 # Member 2 (pair 1) write code to create object 'plastic_data_all':
-plastic_data_all <- data1
-plastic_data_all %>% head(n = 10)
-
-
 
 # Member 4 (pair 2) write code to join your data to 'plastic_data_all':
-
-
 
 
 # Member 6 (pair 3) write code to join your data to 'plastic_data_all':
 
 
-
-
 # Member 1 (pair 1) write code to join your data to 'plastic_data_all':
-plastic_data_all <- data4 %>%
-  select(-name) %>%
-  right_join(plastic_data_all, by = "code")
+
+
+
 
 
 ```
