@@ -17,13 +17,12 @@ library(readr)
 ## Load & join data sets
 
 ```{r load-data, message = FALSE}
-<<<<<<< HEAD
 # Member 2 (pair 1) write code to load File 1 data here:4
 data1 <- read_excel("~/lab02/data/UN_country_region.xlsx")
-=======
+
 # Member 2 (pair 1) write code to load File 1 data here:
 data1 <-read_csv("data/mismanaged-plastic-waste-per-capita.csv")
->>>>>>> 74f60a75fe84cad43f2e3fe98f07aac1238a5f03
+
 
 
 # Member 4 (pair 2) write code to load File 2 data here:
