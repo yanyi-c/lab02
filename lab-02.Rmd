@@ -23,7 +23,7 @@ read_csv("data/mismanaged-plastic-waste-per-capita.csv")
 # Member 4 (pair 2) write code to load File 2 data here:
 
 read_csv2("data/per-capita-ocean-plastic-waste.txt")
-data2 <- read_csv2("data/per-capita-ocean-plastic-waste.txt")
+
 
 # Member 6 (pair 3) write code to load File 3 data here:
 
